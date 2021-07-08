@@ -1,0 +1,51 @@
+.headerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.titleStyle {
+    font-size: 44px;
+    color: white;
+    font-weight: 800;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.findButton {
+    margin-right: 8px;
+    margin-left: 8px;
+    height: 35px;
+    width: 35px;
+    border-radius: 9px;
+    border: none;
+    background-color: #0123FB;
+    transition: 0.3s;
+}
+
+.findButton:hover {
+    box-shadow: 0 0 10px #0123FB;
+}
+
+.inputSearch {
+    height: 33px;
+    border-radius: 8px;
+    border: none;
+    background-color: #24272E;
+    padding-left: 10px;
+}
+
+.inputSearch:focus {
+    outline: none;
+}
+
+.searchIcon {
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    color: white;
+}
