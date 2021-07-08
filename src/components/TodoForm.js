@@ -18,8 +18,12 @@ const TodoForm = (props) => {
     const submitHandler = e => {
         e.preventDefault();
 
+        let id = Math.floor(Math.random() * 10000);
+
+        localStorage.setItem(id.toString(), inputTodo);
+
         props.onSubmit({
-            id: Math.floor(Math.random() * 10000),
+            id: id,
             text: inputTodo
         });
 
